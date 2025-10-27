@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { ShoppingCart, Menu, X } from 'lucide-react';
+import { ShoppingCart, Menu, X, User } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
 
 export default function Header() {
@@ -17,33 +17,51 @@ export default function Header() {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
-            <Link href="/">
-              <h1 className='text-pink-500 text-3xl font-bold'>T-Bella</h1>
-            </Link>
-          </div>
-
+        
           <nav className="hidden md:flex space-x-8">
             <Link
               href="/"
               className={`${isActive('/') ? 'cursor-pointer hover:text-pink-100 text-pink-600 font-medium' : 'cursor-pointer hover:text-pink-600'} cursor-pointer hover:text-pink-600`}
             >
-              Home
+              HOME
             </Link>
             <Link
               href="/products"
               className={`${
-                isActive('/products') ? 'text-indigo-600' : 'text-gray-700'
-              } hover:text-indigo-600`}
+                isActive('/products') ? '' : 'font-medium'
+              } hover:text-pink-600`}
             >
-              Products
+              SHOP
+            </Link>
+
+               <Link
+              href="/products"
+              className={`${
+                isActive('/products') ? '' : 'font-medium'
+              } hover:text-pink-600`}
+            >
+              LATEST
             </Link>
           </nav>
 
+                <div className="flex items-center">
+            <Link href="/">
+              <h1 className='text-pink-500 text-3xl font-bold'>T-Bella</h1>
+            </Link>
+          </div>
+
           <div className="flex items-center space-x-4">
+
+             <Link
+              href=""
+              className="relative p-2 text-gray-700 hover:text-pink-600"
+            >
+              <User/>
+            </Link>
+
             <Link
               href="/cart"
-              className="relative p-2 text-gray-700 hover:text-indigo-600"
+              className="relative p-2 text-gray-700 hover:text-pink-600"
             >
               <ShoppingCart className="w-6 h-6" />
               {itemCount > 0 && (
