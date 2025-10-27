@@ -19,16 +19,14 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/">
-              <h1 className='text-pink-500 text-2xl font-bold'>T-Bella</h1>
+              <h1 className='text-pink-500 text-3xl font-bold'>T-Bella</h1>
             </Link>
           </div>
 
           <nav className="hidden md:flex space-x-8">
             <Link
               href="/"
-              className={`${
-                isActive('/') ? 'text-indigo-600' : 'text-gray-700'
-              } hover:text-indigo-600`}
+              className={`${isActive('/') ? 'cursor-pointer hover:text-pink-100 text-pink-600 font-medium' : 'cursor-pointer hover:text-pink-600'} cursor-pointer hover:text-pink-600`}
             >
               Home
             </Link>
