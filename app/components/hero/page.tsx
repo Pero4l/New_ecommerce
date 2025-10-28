@@ -278,7 +278,7 @@ const slides = [
   {
     id: 1,
     image:
-      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1600&q=80",
+      "https://t4.ftcdn.net/jpg/03/07/39/99/240_F_307399900_3HatCfdEyov8dKue6KqLt196Iml7djMW.jpg",
     title: "New Arrivals",
     subtitle: "Discover the latest trends in fashion",
     cta: "Shop Now",
@@ -286,18 +286,18 @@ const slides = [
   {
     id: 2,
     image:
-      "https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=1600&q=80",
-    title: "Luxury Collection",
-    subtitle: "Elevate your style with premium designs",
+      "https://t3.ftcdn.net/jpg/03/87/94/86/240_F_387948605_WXRMvwVWbB1V21quHWFwTTQEUDqz5n3S.jpg",
+    title: "Unleash Your Beauty",
+    subtitle: "Quality You Deserve. Style You Love. Prices You'll Enjoy",
     cta: "Explore Collection",
   },
   {
     id: 3,
     image:
-      "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1600&q=80",
-    title: "Autumn Essentials",
-    subtitle: "Cozy up with our warmest looks",
-    cta: "View Lookbook",
+      "https://t3.ftcdn.net/jpg/02/19/38/62/240_F_219386229_etfKSz0287dUNYvxA2g05Kcydah0eme8.jpg",
+    title: "Book a Section",
+    subtitle: "You Can Book a Section With Us",
+    cta: "Call Us Now",
   },
 ];
 
