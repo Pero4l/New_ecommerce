@@ -40,7 +40,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           </Link>
           <button
             onClick={() => addToCart(product)}
-            className="flex-1 bg-pink-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition"
+            className="flex-1 bg-pink-600 text-white py-2 rounded-lg hover:bg-pink-800 transition"
           >
             Add to Cart
           </button>

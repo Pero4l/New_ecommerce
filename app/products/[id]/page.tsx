@@ -75,7 +75,7 @@ export default function ProductDetailPage() {
 
           <button
             onClick={handleAddToCart}
-            className="w-full bg-pink-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition"
+            className="w-full bg-pink-600 text-white py-3 rounded-lg font-semibold hover:bg-pink-800 transition"
           >
             Add to Cart
           </button>
