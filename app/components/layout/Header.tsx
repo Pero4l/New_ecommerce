@@ -84,6 +84,8 @@ export default function Header() {
         </div>
       </div>
 
+      {/* Mobile menu */}
+
       {mobileMenuOpen && (
         <div className="md:hidden border-t">
           <div className="px-4 py-3 space-y-3">
@@ -99,7 +101,15 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(false)}
               className="block w-full text-left text-gray-700"
             >
-              Products
+              Shop
+            </Link>
+
+            <Link
+              href="/products"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block w-full text-left text-gray-700"
+            >
+              Latest
             </Link>
           </div>
         </div>

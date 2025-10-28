@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { products } from '@/lib/data';
 import ProductCard from '@/app/components/ProductCard';
+import HeroSlider from "@/app/components/hero/page"
 
 export default function HomePage() {
   const featured = products.slice(0, 3);
@@ -21,6 +22,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <HeroSlider/>
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h2 className="text-3xl font-bold mb-8">Featured Products</h2>
