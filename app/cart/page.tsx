@@ -21,7 +21,7 @@ export default function CartPage() {
         <h2 className="text-2xl font-bold mb-4">Your cart is empty</h2>
         <Link
           href="/products"
-          className="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700"
+          className="inline-block bg-pink-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700"
         >
           Continue Shopping
         </Link>
@@ -45,7 +45,7 @@ export default function CartPage() {
               </div>
               <div className="flex-1">
                 <h3 className="font-semibold text-lg mb-2">{item.name}</h3>
-                <p className="text-indigo-600 font-bold mb-2">${item.price}</p>
+                <p className="text-pink-600 font-bold mb-2">${item.price}</p>
                 <div className="flex items-center gap-3">
                   <button
                     onClick={() => updateQuantity(item.id, item.quantity - 1)}
@@ -95,12 +95,12 @@ export default function CartPage() {
               </div>
               <div className="border-t pt-3 flex justify-between text-lg font-bold">
                 <span>Total</span>
-                <span className="text-indigo-600">${total.toFixed(2)}</span>
+                <span className="text-pink-600">${total.toFixed(2)}</span>
               </div>
             </div>
             <Link
               href="/checkout"
-              className="block w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition text-center"
+              className="block w-full bg-pink-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition text-center"
             >
               Proceed to Checkout
             </Link>

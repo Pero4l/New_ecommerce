@@ -24,7 +24,7 @@ export default function ProductsPage() {
             onClick={() => setSelectedCategory(cat)}
             className={`px-4 py-2 rounded-lg ${
               selectedCategory === cat
-                ? 'bg-indigo-600 text-white'
+                ? 'bg-pink-600 text-white'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
           >

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Star } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
 import type { Product } from '@/types';
+import Image from 'next/image';
 
 interface ProductCardProps {
   product: Product;
@@ -14,6 +15,8 @@ export default function ProductCard({ product }: ProductCardProps) {
 
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+      {/* <Image src={product.image} alt="hair" width={100} height={100} /> */}
+
       <div className="h-48 bg-gray-100 flex items-center justify-center text-6xl">
         {product.image}
       </div>
