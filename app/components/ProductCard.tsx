@@ -25,7 +25,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             {product.rating} ({product.reviews})
           </span>
         </div>
-        <p className="text-2xl font-bold text-indigo-600 mb-4">
+        <p className="text-2xl font-bold text-pink-600 mb-4">
           ${product.price}
         </p>
         <div className="flex gap-2">

@@ -27,7 +27,7 @@ export default function ProductDetailPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <button
         onClick={() => router.push('/products')}
-        className="text-indigo-600 mb-4 hover:underline"
+        className="text-pink-800 mb-4 hover:underline"
       >
         ← Back to Products
       </button>
@@ -45,7 +45,7 @@ export default function ProductDetailPage() {
               {product.rating} ({product.reviews} reviews)
             </span>
           </div>
-          <p className="text-4xl font-bold text-indigo-600 mb-6">
+          <p className="text-4xl font-bold text-pink-600 mb-6">
             ${product.price}
           </p>
           <p className="text-gray-600 mb-8 leading-relaxed">
@@ -75,7 +75,7 @@ export default function ProductDetailPage() {
 
           <button
             onClick={handleAddToCart}
-            className="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition"
+            className="w-full bg-pink-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition"
           >
             Add to Cart
           </button>
