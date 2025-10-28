@@ -59,7 +59,7 @@ export default function CheckoutPage() {
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
                 }
-                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
+                className="w-full px-4 py-2 border rounded-lg focus:ring-2 outline-none focus:ring-pink-600 focus:border-transparent"
               />
             </div>
 
@@ -73,7 +73,7 @@ export default function CheckoutPage() {
                   onChange={(e) =>
                     setFormData({ ...formData, firstName: e.target.value })
                   }
-                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-600"
+                  className="px-4 py-2 border rounded-lg focus:ring-2 outline-none focus:ring-pink-600 focus:border-transparent"
                 />
                 <input
                   type="text"
@@ -82,7 +82,7 @@ export default function CheckoutPage() {
                   onChange={(e) =>
                     setFormData({ ...formData, lastName: e.target.value })
                   }
-                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-600"
+                  className="px-4 py-2 border rounded-lg focus:ring-2 outline-none focus:ring-pink-600 focus:border-transparent"
                 />
                 <input
                   type="text"
@@ -91,7 +91,7 @@ export default function CheckoutPage() {
                   onChange={(e) =>
                     setFormData({ ...formData, address: e.target.value })
                   }
-                  className="col-span-2 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-600"
+                  className="col-span-2 px-4 py-2 border rounded-lg focus:ring-2 outline-none focus:ring-pink-600 focus:border-transparent"
                 />
                 <input
                   type="text"
@@ -100,7 +100,7 @@ export default function CheckoutPage() {
                   onChange={(e) =>
                     setFormData({ ...formData, city: e.target.value })
                   }
-                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-600"
+                  className="px-4 py-2 border rounded-lg focus:ring-2 outline-none focus:ring-pink-600 focus:border-transparent"
                 />
                 <input
                   type="text"
@@ -109,7 +109,7 @@ export default function CheckoutPage() {
                   onChange={(e) =>
                     setFormData({ ...formData, zip: e.target.value })
                   }
-                  className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-600"
+                  className="px-4 py-2 border rounded-lg focus:ring-2 outline-none focus:ring-pink-600 focus:border-transparent"
                 />
               </div>
             </div>
@@ -124,7 +124,7 @@ export default function CheckoutPage() {
                   onChange={(e) =>
                     setFormData({ ...formData, cardNumber: e.target.value })
                   }
-                  className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-600"
+                  className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-pink-600"
                 />
                 <div className="grid grid-cols-2 gap-4">
                   <input
@@ -134,7 +134,7 @@ export default function CheckoutPage() {
                     onChange={(e) =>
                       setFormData({ ...formData, expiry: e.target.value })
                     }
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-pink-600"
                   />
                   <input
                     type="text"
@@ -143,7 +143,7 @@ export default function CheckoutPage() {
                     onChange={(e) =>
                       setFormData({ ...formData, cvv: e.target.value })
                     }
-                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-600"
+                    className="px-4 py-2 border rounded-lg focus:ring-2 focus:ring-pink-600"
                   />
                 </div>
               </div>
@@ -151,7 +151,7 @@ export default function CheckoutPage() {
 
             <button
               onClick={handleSubmit}
-              className="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition"
+              className="w-full bg-pink-600 text-white py-3 rounded-lg font-semibold hover:bg-pink-800 transition"
             >
               Place Order
             </button>
@@ -176,7 +176,7 @@ export default function CheckoutPage() {
             <div className="border-t pt-4">
               <div className="flex justify-between text-lg font-bold">
                 <span>Total</span>
-                <span className="text-indigo-600">${total.toFixed(2)}</span>
+                <span className="text-pink-600">${total.toFixed(2)}</span>
               </div>
             </div>
           </div>
